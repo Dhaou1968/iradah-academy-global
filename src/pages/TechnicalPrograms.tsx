@@ -1,5 +1,4 @@
-
-import { useState } from "react";
+import React, { useState } from "react";
 import { Cpu, Palette, Table2, FileSpreadsheet, Globe } from "lucide-react";
 import SectionTitle from "@/components/SectionTitle";
 import CourseCard from "@/components/CourseCard";
@@ -80,7 +79,8 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
                    language.code === "es" ? "Herramienta de diseño en línea simple y fácil de usar." : 
                    "Simple and easy-to-use online design tool.",
       icon: Palette,
-      category: "design"
+      category: "design",
+      logo: "/lovable-uploads/cead009b-1b4c-4e94-876b-97148ec97b5d.png"  // Added Canva logo
     },
     {
       name: "Microsoft Word",
@@ -330,7 +330,15 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
               <div key={index} className="bg-white rounded-lg p-6 shadow-md text-center card-hover">
                 <div className="flex justify-center mb-4">
                   <div className="p-3 bg-irada-blue/10 rounded-full">
-                    <tool.icon className="h-10 w-10 text-irada-blue" />
+                    {tool.logo ? (
+                      <img 
+                        src={tool.logo} 
+                        alt={`${tool.name} logo`} 
+                        className="h-10 w-10 object-contain"
+                      />
+                    ) : (
+                      <tool.icon className="h-10 w-10 text-irada-blue" />
+                    )}
                   </div>
                 </div>
                 <h3 className="text-lg font-bold text-irada-blue mb-2">{tool.name}</h3>
