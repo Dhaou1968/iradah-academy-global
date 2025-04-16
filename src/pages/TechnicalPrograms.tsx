@@ -139,6 +139,16 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
       icon: Cpu,
       category: "ai",
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"
+    },
+    {
+      name: "Calendly",
+      description: language.code === "ar" ? "أداة جدولة المواعيد عبر الإنترنت لتبسيط التنسيق والتواصل." : 
+                   language.code === "fr" ? "Outil de planification en ligne pour simplifier la coordination et la communication." : 
+                   language.code === "es" ? "Herramienta de programación en línea para simplificar la coordinación y la comunicación." : 
+                   "Online scheduling tool to simplify coordination and communication.",
+      icon: Globe,
+      category: "interactive",
+      logo: "/lovable-uploads/730a562f-0f12-473c-838d-9d68df42ed7b.png"
     }
   ];
 
