@@ -12,7 +12,6 @@ interface TechnicalProgramsProps {
 export default function TechnicalPrograms({ language }: TechnicalProgramsProps) {
   const dir = language.dir;
   
-  // Texts based on language
   const content = {
     ar: {
       pageTitle: "البرامج التقنية",
@@ -64,13 +63,12 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
       officePrograms: "Programas de Oficina",
       interactivePrograms: "Programas Interactivos",
       aiPrograms: "Programas de IA",
-      allCourses: "Todos los Cursos"
+      allCourses: "Todos los Cours"
     }
   };
   
   const text = content[language.code as keyof typeof content];
   
-  // Technical tools
   const tools = [
     {
       name: "Canva",
@@ -80,7 +78,7 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
                    "Simple and easy-to-use online design tool.",
       icon: Palette,
       category: "design",
-      logo: "/lovable-uploads/cead009b-1b4c-4e94-876b-97148ec97b5d.png"  // Added Canva logo
+      logo: "/lovable-uploads/cead009b-1b4c-4e94-876b-97148ec97b5d.png"
     },
     {
       name: "Microsoft Word",
@@ -89,7 +87,8 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
                    language.code === "es" ? "Programa completo de procesamiento de textos y creación de documentos." : 
                    "Comprehensive word processing and document creation program.",
       icon: FileSpreadsheet,
-      category: "office"
+      category: "office",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png"
     },
     {
       name: "Microsoft Excel",
@@ -98,7 +97,8 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
                    language.code === "es" ? "Potente programa para procesar datos y crear hojas de cálculo." : 
                    "Powerful data processing and spreadsheet creation program.",
       icon: Table2,
-      category: "office"
+      category: "office",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png"
     },
     {
       name: "Google Forms",
@@ -107,7 +107,8 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
                    language.code === "es" ? "Herramienta para crear encuestas y recopilar datos en línea." : 
                    "Tool for creating surveys and collecting data online.",
       icon: Table2,
-      category: "interactive"
+      category: "interactive",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Google_Forms_2020_Logo.svg/1200px-Google_Forms_2020_Logo.svg.png"
     },
     {
       name: "Padlet",
@@ -116,7 +117,8 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
                    language.code === "es" ? "Plataforma interactiva para colaborar y organizar información visualmente." : 
                    "Interactive platform for collaboration and visually organizing information.",
       icon: Globe,
-      category: "interactive"
+      category: "interactive",
+      logo: "https://www.padlet.com/cdn/1_0/images/padlet-logo-2023.png"
     },
     {
       name: "Wooclap",
@@ -125,7 +127,8 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
                    language.code === "es" ? "Plataforma interactiva para aulas y presentaciones." : 
                    "Interactive platform for classrooms and presentations.",
       icon: Cpu,
-      category: "interactive"
+      category: "interactive",
+      logo: "https://www.wooclap.com/static/wooclap-logo-blue-circle-68ced7c4d1510a16eb93f25c79ad3c55.svg"
     },
     {
       name: "AI Tools",
@@ -134,11 +137,11 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
                    language.code === "es" ? "Herramientas de IA para productividad y mejora del trabajo." : 
                    "AI tools for productivity and work enhancement.",
       icon: Cpu,
-      category: "ai"
+      category: "ai",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"
     }
   ];
-  
-  // Sample courses
+
   const courses = [
     {
       id: "course1",
@@ -282,10 +285,8 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
     }
   ];
 
-  // State
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   
-  // Categories
   const categories = [
     { id: "design", name: text.designPrograms },
     { id: "office", name: text.officePrograms },
@@ -293,14 +294,12 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
     { id: "ai", name: text.aiPrograms }
   ];
   
-  // Filter courses based on selected category
   const filteredCourses = selectedCategory === "all" 
     ? courses 
     : courses.filter(course => course.category === selectedCategory);
 
   return (
     <div className={dir}>
-      {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-irada-blue to-irada-blue/90 py-20">
         <div className="absolute inset-0 opacity-10 islamic-pattern"></div>
         <div className="container mx-auto px-4 z-10">
@@ -315,7 +314,6 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
         </div>
       </section>
 
-      {/* Tools Grid Section */}
       <section className="py-20 bg-irada-gray arabic-ornament">
         <div className="container mx-auto px-4">
           <SectionTitle 
@@ -349,7 +347,6 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
         </div>
       </section>
 
-      {/* Courses Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <SectionTitle 
