@@ -108,7 +108,7 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
                    "Tool for creating surveys and collecting data online.",
       icon: Table2,
       category: "interactive",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Google_Forms_2020_Logo.svg/1200px-Google_Forms_2020_Logo.svg.png"
+      logo: "/lovable-uploads/b753f015-6a5f-47df-b862-dc1d95307e18.png"
     },
     {
       name: "Padlet",
@@ -118,7 +118,7 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
                    "Interactive platform for collaboration and visually organizing information.",
       icon: Globe,
       category: "interactive",
-      logo: "https://www.padlet.com/cdn/1_0/images/padlet-logo-2023.png"
+      logo: "/lovable-uploads/20350a81-bfbc-403a-a321-9eceac0d8681.png"
     },
     {
       name: "Wooclap",
@@ -128,7 +128,7 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
                    "Interactive platform for classrooms and presentations.",
       icon: Cpu,
       category: "interactive",
-      logo: "https://www.wooclap.com/static/wooclap-logo-blue-circle-68ced7c4d1510a16eb93f25c79ad3c55.svg"
+      logo: "/lovable-uploads/52ad38bc-432e-4fd6-888f-eaee951e3d0f.png"
     },
     {
       name: "AI Tools",
