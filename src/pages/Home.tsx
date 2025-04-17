@@ -30,7 +30,6 @@ export default function Home({ language }: HomeProps) {
   const navigate = useNavigate();
   const dir = language.dir;
   
-  // Texts based on language
   const content = {
     ar: {
       heroCta: "منصة الإرادة التعليمية",
@@ -116,7 +115,6 @@ export default function Home({ language }: HomeProps) {
   
   const text = content[language.code as keyof typeof content];
   
-  // Sample featured courses
   const featuredCourses = [
     {
       id: "course1",
@@ -213,7 +211,6 @@ export default function Home({ language }: HomeProps) {
     }
   ];
   
-  // Sample testimonials
   const testimonials = [
     {
       id: "testimonial1",
@@ -268,7 +265,6 @@ export default function Home({ language }: HomeProps) {
     }
   ];
   
-  // Educational fields
   const fields = [
     {
       id: "strategic",
@@ -328,23 +324,22 @@ export default function Home({ language }: HomeProps) {
   const ChevronIconNext = dir === "rtl" ? ChevronLeft : ChevronRight;
   const ChevronIconPrev = dir === "rtl" ? ChevronRight : ChevronLeft;
 
-  // Sample YouTube videos
   const youtubeVideos = [
     {
       id: "video1",
-      videoId: "9KHLTZaJcR8", // Placeholder video ID - replace with your actual video ID
-      title: language.code === "ar" ? "استراتيجيات التخطيط الناجح" : 
-             language.code === "fr" ? "Stratégies de Planification Réussie" : 
-             language.code === "es" ? "Estrategias de Planificación Exitosa" : 
-             "Successful Planning Strategies",
-      description: language.code === "ar" ? "تعلم كيفية التخطيط بفعالية لتحقيق أهدافك الشخصية والمهنية." : 
-                   language.code === "fr" ? "Apprenez à planifier efficacement pour atteindre vos objectifs personnels et professionnels." : 
-                   language.code === "es" ? "Aprenda a planificar eficazmente para alcanzar sus objetivos personales y profesionales." : 
-                   "Learn how to plan effectively to achieve your personal and professional goals."
+      videoId: "zbgLVc6gYkU",
+      title: language.code === "ar" ? "الذكاء الاصطناعي والتخطيط الاستراتيجي" : 
+             language.code === "fr" ? "L'Intelligence Artificielle et la Planification Stratégique" : 
+             language.code === "es" ? "Inteligencia Artificial y Planificación Estratégica" : 
+             "Artificial Intelligence and Strategic Planning",
+      description: language.code === "ar" ? "تعلم كيفية الاستفادة من الذكاء الاصطناعي في التخطيط الاستراتيجي." : 
+                   language.code === "fr" ? "Apprenez à utiliser l'intelligence artificielle dans la planification stratégique." : 
+                   language.code === "es" ? "Aprenda a utilizar la inteligencia artificial en la planificación estratégica." : 
+                   "Learn how to leverage artificial intelligence in strategic planning."
     },
     {
       id: "video2",
-      videoId: "dQw4w9WgXcQ", // Placeholder video ID - replace with your actual video ID
+      videoId: "dQw4w9WgXcQ",
       title: language.code === "ar" ? "تعلم كانفا للمبتدئين" : 
              language.code === "fr" ? "Apprendre Canva pour les Débutants" : 
              language.code === "es" ? "Aprende Canva para Principiantes" : 
@@ -356,7 +351,7 @@ export default function Home({ language }: HomeProps) {
     },
     {
       id: "video3",
-      videoId: "60ItHLz5WEA", // Placeholder video ID - replace with your actual video ID
+      videoId: "60ItHLz5WEA",
       title: language.code === "ar" ? "أساسيات اللغة العربية" : 
              language.code === "fr" ? "Fondamentaux de la Langue Arabe" : 
              language.code === "es" ? "Fundamentos del Idioma Árabe" : 
@@ -370,7 +365,6 @@ export default function Home({ language }: HomeProps) {
 
   return (
     <div className={dir}>
-      {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-irada-blue to-irada-blue/90 min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 opacity-10 islamic-pattern"></div>
         <div className="container mx-auto px-4 py-16 z-10">
@@ -426,7 +420,6 @@ export default function Home({ language }: HomeProps) {
         </div>
       </section>
 
-      {/* Features Section */}
       <section className="py-20 bg-irada-gray arabic-ornament">
         <div className="container mx-auto px-4">
           <SectionTitle 
@@ -486,7 +479,6 @@ export default function Home({ language }: HomeProps) {
         </div>
       </section>
 
-      {/* Featured Courses Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-10">
@@ -517,7 +509,6 @@ export default function Home({ language }: HomeProps) {
         </div>
       </section>
 
-      {/* YouTube Videos Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <SectionTitle 
@@ -562,7 +553,6 @@ export default function Home({ language }: HomeProps) {
         </div>
       </section>
 
-      {/* Testimonials Section */}
       <section className="py-20 bg-irada-blue/5">
         <div className="container mx-auto px-4">
           <SectionTitle 
@@ -595,7 +585,6 @@ export default function Home({ language }: HomeProps) {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-irada-blue to-irada-blue/90 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

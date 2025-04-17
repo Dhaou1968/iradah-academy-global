@@ -8,7 +8,7 @@ interface YouTubeVideoProps {
   language: Language;
 }
 
-export default function YouTubeVideo({ videoId, title, description }: YouTubeVideoProps) {
+export default function YouTubeVideo({ videoId, title, description, language }: YouTubeVideoProps) {
   return (
     <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
       <div className="aspect-w-16 aspect-h-9">
