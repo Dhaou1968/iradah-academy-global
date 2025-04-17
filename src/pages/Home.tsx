@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { 
@@ -327,39 +328,39 @@ export default function Home({ language }: HomeProps) {
   const youtubeVideos = [
     {
       id: "video1",
-      videoId: "zbgLVc6gYkU",
-      title: language.code === "ar" ? "الذكاء الاصطناعي والتخطيط الاستراتيجي" : 
-             language.code === "fr" ? "L'Intelligence Artificielle et la Planification Stratégique" : 
-             language.code === "es" ? "Inteligencia Artificial y Planificación Estratégica" : 
-             "Artificial Intelligence and Strategic Planning",
-      description: language.code === "ar" ? "تعلم كيفية الاستفادة من الذكاء الاصطناعي في التخطيط الاستراتيجي." : 
-                   language.code === "fr" ? "Apprenez à utiliser l'intelligence artificielle dans la planification stratégique." : 
-                   language.code === "es" ? "Aprenda a utilizar la inteligencia artificial en la planificación estratégica." : 
-                   "Learn how to leverage artificial intelligence in strategic planning."
+      videoId: "fqSGdVhpJ-o",
+      title: language.code === "ar" ? "التخطيط الاستراتيجي الشخصي - دورة الإرادة" : 
+             language.code === "fr" ? "Planification Stratégique Personnelle - Cours Irada" : 
+             language.code === "es" ? "Planificación Estratégica Personal - Curso Irada" : 
+             "Personal Strategic Planning - Irada Course",
+      description: language.code === "ar" ? "شرح مفصل عن التخطيط الاستراتيجي الشخصي وكيفية تحقيق الأهداف." : 
+                   language.code === "fr" ? "Explication détaillée de la planification stratégique personnelle et comment atteindre vos objectifs." : 
+                   language.code === "es" ? "Explicación detallada de la planificación estratégica personal y cómo lograr sus objetivos." : 
+                   "Detailed explanation of personal strategic planning and how to achieve your goals."
     },
     {
       id: "video2",
-      videoId: "dQw4w9WgXcQ",
-      title: language.code === "ar" ? "تعلم كانفا للمبتدئين" : 
-             language.code === "fr" ? "Apprendre Canva pour les Débutants" : 
-             language.code === "es" ? "Aprende Canva para Principiantes" : 
-             "Learn Canva for Beginners",
-      description: language.code === "ar" ? "دليل شامل لاستخدام كانفا للتصميم الجرافيكي بسهولة." : 
-                   language.code === "fr" ? "Guide complet pour utiliser Canva pour la conception graphique facilement." : 
-                   language.code === "es" ? "Guía completa para usar Canva para diseño gráfico fácilmente." : 
-                   "A comprehensive guide to using Canva for graphic design easily."
+      videoId: "n2Q2Vwj20xw",
+      title: language.code === "ar" ? "مسارات تعليم اللغة الألمانية - خطوة بخطوة" : 
+             language.code === "fr" ? "Parcours d'Apprentissage de l'Allemand - Étape par Étape" : 
+             language.code === "es" ? "Caminos de Aprendizaje del Alemán - Paso a Paso" : 
+             "German Language Learning Paths - Step by Step",
+      description: language.code === "ar" ? "دليل شامل لتعلم اللغة الألمانية من البداية حتى الاحتراف." : 
+                   language.code === "fr" ? "Guide complet pour apprendre l'allemand du début à la maîtrise." : 
+                   language.code === "es" ? "Guía completa para aprender alemán desde el principio hasta el dominio." : 
+                   "A comprehensive guide to learning German from beginner to proficiency."
     },
     {
       id: "video3",
-      videoId: "60ItHLz5WEA",
-      title: language.code === "ar" ? "أساسيات اللغة العربية" : 
-             language.code === "fr" ? "Fondamentaux de la Langue Arabe" : 
-             language.code === "es" ? "Fundamentos del Idioma Árabe" : 
-             "Arabic Language Fundamentals",
-      description: language.code === "ar" ? "تعلم أساسيات اللغة العربية مع هذا الشرح المبسط." : 
-                   language.code === "fr" ? "Apprenez les bases de la langue arabe avec cette explication simplifiée." : 
-                   language.code === "es" ? "Aprenda los fundamentos del idioma árabe con esta explicación simplificada." : 
-                   "Learn the basics of the Arabic language with this simplified explanation."
+      videoId: "9fDLAaLJbpU",
+      title: language.code === "ar" ? "رحلة استراتيجية: إعداد خطتك الاستراتيجية الشخصية" : 
+             language.code === "fr" ? "Voyage Stratégique: Préparation de votre Plan Stratégique Personnel" : 
+             language.code === "es" ? "Viaje Estratégico: Preparación de su Plan Estratégico Personal" : 
+             "Strategic Journey: Preparing Your Personal Strategic Plan",
+      description: language.code === "ar" ? "خطوات عملية لإعداد خطة استراتيجية شخصية ناجحة." : 
+                   language.code === "fr" ? "Étapes pratiques pour préparer un plan stratégique personnel réussi." : 
+                   language.code === "es" ? "Pasos prácticos para preparar un plan estratégico personal exitoso." : 
+                   "Practical steps for preparing a successful personal strategic plan."
     }
   ];
 
