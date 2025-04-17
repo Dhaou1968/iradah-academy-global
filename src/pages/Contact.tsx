@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { 
   MapPin, 
@@ -32,7 +31,6 @@ export default function Contact({ language }: ContactProps) {
   const { toast } = useToast();
   const dir = language.dir;
   
-  // Texts based on language
   const content = {
     ar: {
       pageTitle: "اتصل بنا",
@@ -40,7 +38,7 @@ export default function Contact({ language }: ContactProps) {
       contactInfo: "معلومات الاتصال",
       contactInfoDesc: "يمكنك التواصل معنا من خلال القنوات التالية",
       address: "العنوان",
-      addressValue: "الرياض، المملكة العربية السعودية",
+      addressValue: "ليون، فرنسا",
       phone: "الهاتف",
       email: "البريد الإلكتروني",
       socialMedia: "وسائل التواصل الاجتماعي",
@@ -65,7 +63,7 @@ export default function Contact({ language }: ContactProps) {
       contactInfo: "Contact Information",
       contactInfoDesc: "You can reach us through the following channels",
       address: "Address",
-      addressValue: "Riyadh, Saudi Arabia",
+      addressValue: "Lyon, France",
       phone: "Phone",
       email: "Email",
       socialMedia: "Social Media",
@@ -90,7 +88,7 @@ export default function Contact({ language }: ContactProps) {
       contactInfo: "Informations de Contact",
       contactInfoDesc: "Vous pouvez nous joindre par les canaux suivants",
       address: "Adresse",
-      addressValue: "Riyad, Arabie Saoudite",
+      addressValue: "Lyon, France",
       phone: "Téléphone",
       email: "Email",
       socialMedia: "Réseaux Sociaux",
@@ -115,7 +113,7 @@ export default function Contact({ language }: ContactProps) {
       contactInfo: "Información de Contacto",
       contactInfoDesc: "Puede comunicarse con nosotros a través de los siguientes canales",
       address: "Dirección",
-      addressValue: "Riad, Arabia Saudita",
+      addressValue: "Lyon, Francia",
       phone: "Teléfono",
       email: "Correo Electrónico",
       socialMedia: "Redes Sociales",
@@ -138,7 +136,6 @@ export default function Contact({ language }: ContactProps) {
   
   const text = content[language.code as keyof typeof content];
   
-  // FAQ items
   const faqItems = [
     {
       question: language.code === "ar" ? "كيف يمكنني التسجيل في دورة؟" : 
@@ -182,7 +179,6 @@ export default function Contact({ language }: ContactProps) {
     }
   ];
   
-  // Form state
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -197,10 +193,8 @@ export default function Contact({ language }: ContactProps) {
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
     console.log("Form submitted:", formData);
     
-    // Show success message
     toast({
       title: language.code === "ar" ? "تم إرسال الرسالة" : 
              language.code === "fr" ? "Message Envoyé" : 
@@ -210,7 +204,6 @@ export default function Contact({ language }: ContactProps) {
       duration: 5000
     });
     
-    // Reset form
     setFormData({
       name: "",
       email: "",
@@ -221,7 +214,6 @@ export default function Contact({ language }: ContactProps) {
 
   return (
     <div className={dir}>
-      {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-irada-blue to-irada-blue/90 py-20">
         <div className="absolute inset-0 opacity-10 islamic-pattern"></div>
         <div className="container mx-auto px-4 z-10">
@@ -236,11 +228,9 @@ export default function Contact({ language }: ContactProps) {
         </div>
       </section>
 
-      {/* Contact Info Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Contact Form */}
             <div>
               <Card className="h-full">
                 <CardHeader>
@@ -321,7 +311,6 @@ export default function Contact({ language }: ContactProps) {
               </Card>
             </div>
             
-            {/* Contact Information */}
             <div>
               <Card className="h-full">
                 <CardHeader>
@@ -349,7 +338,7 @@ export default function Contact({ language }: ContactProps) {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-irada-blue">{text.phone}</h3>
-                      <p className="text-gray-600">+966 51 234 5678</p>
+                      <p className="text-gray-600">+33 7 5145 5969</p>
                     </div>
                   </div>
                   
@@ -359,7 +348,7 @@ export default function Contact({ language }: ContactProps) {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-irada-blue">{text.email}</h3>
-                      <p className="text-gray-600">info@irada-academy.com</p>
+                      <p className="text-gray-600">contact@iradah-training.com</p>
                     </div>
                   </div>
                   
@@ -399,7 +388,6 @@ export default function Contact({ language }: ContactProps) {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="py-20 bg-irada-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -424,7 +412,6 @@ export default function Contact({ language }: ContactProps) {
         </div>
       </section>
 
-      {/* Map Section */}
       <section className="h-96 w-full bg-gray-200">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232192.67989833672!2d46.717300378912905!3d24.726179926025758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1713361863687!5m2!1sen!2sus" 

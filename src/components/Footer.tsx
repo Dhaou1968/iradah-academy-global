@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
 import { Language } from "./LanguageSwitcher";
@@ -16,7 +15,7 @@ export default function Footer({ currentLanguage }: FooterProps) {
       aboutText: "منصة الإرادة التعليمية هي منصة متكاملة للتعليم وتطوير المهارات، تقدم دورات متخصصة في مجالات متنوعة تشمل التخطيط الاستراتيجي، البرامج التقنية، تعليم اللغة العربية، وتطوير الذات.",
       menu: "القائمة الرئيسية",
       contact: "تواصل معنا",
-      address: "المملكة العربية السعودية، الرياض",
+      address: "ليون، فرنسا",
       rights: "جميع الحقوق محفوظة © 2025 منصة الإرادة التعليمية"
     },
     en: {
@@ -24,7 +23,7 @@ export default function Footer({ currentLanguage }: FooterProps) {
       aboutText: "Irada Educational Platform is a comprehensive platform for education and skills development, offering specialized courses in various fields including strategic planning, technical programs, Arabic language teaching, and personal development.",
       menu: "Main Menu",
       contact: "Contact Us",
-      address: "Riyadh, Saudi Arabia",
+      address: "Lyon, France",
       rights: "All Rights Reserved © 2025 Irada Educational Platform"
     },
     fr: {
@@ -32,7 +31,7 @@ export default function Footer({ currentLanguage }: FooterProps) {
       aboutText: "La Plateforme Éducative Irada est une plateforme complète pour l'éducation et le développement des compétences, offrant des cours spécialisés dans divers domaines, notamment la planification stratégique, les programmes techniques, l'enseignement de la langue arabe et le développement personnel.",
       menu: "Menu Principal",
       contact: "Contactez-nous",
-      address: "Riyad, Arabie Saoudite",
+      address: "Lyon, France",
       rights: "Tous Droits Réservés © 2025 Plateforme Éducative Irada"
     },
     es: {
@@ -40,7 +39,7 @@ export default function Footer({ currentLanguage }: FooterProps) {
       aboutText: "La Plataforma Educativa Irada es una plataforma integral para la educación y el desarrollo de habilidades, que ofrece cursos especializados en diversos campos, incluida la planificación estratégica, programas técnicos, enseñanza del idioma árabe y desarrollo personal.",
       menu: "Menú Principal",
       contact: "Contáctenos",
-      address: "Riad, Arabia Saudita",
+      address: "Lyon, Francia",
       rights: "Todos los Derechos Reservados © 2025 Plataforma Educativa Irada"
     }
   };
@@ -113,11 +112,11 @@ export default function Footer({ currentLanguage }: FooterProps) {
               </div>
               <div className="flex items-center space-x-3 rtl:space-x-reverse">
                 <Phone className="w-5 h-5 text-irada-yellow" />
-                <a href="tel:+966512345678" className="text-gray-200 hover:text-irada-yellow">+966 51 234 5678</a>
+                <a href="tel:+33751455969" className="text-gray-200 hover:text-irada-yellow">+33 7 5145 5969</a>
               </div>
               <div className="flex items-center space-x-3 rtl:space-x-reverse">
                 <Mail className="w-5 h-5 text-irada-yellow" />
-                <a href="mailto:info@irada-academy.com" className="text-gray-200 hover:text-irada-yellow">info@irada-academy.com</a>
+                <a href="mailto:contact@iradah-training.com" className="text-gray-200 hover:text-irada-yellow">contact@iradah-training.com</a>
               </div>
             </div>
           </div>
