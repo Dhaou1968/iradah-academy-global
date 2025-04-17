@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { 
@@ -11,7 +10,8 @@ import {
   ArrowRight,
   ArrowLeft,
   ChevronRight,
-  ChevronLeft
+  ChevronLeft,
+  Youtube
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -19,6 +19,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import SectionTitle from "@/components/SectionTitle";
 import CourseCard from "@/components/CourseCard";
 import TestimonialCard from "@/components/TestimonialCard";
+import YouTubeVideo from "@/components/YouTubeVideo";
 import { Language } from "@/components/LanguageSwitcher";
 
 interface HomeProps {
@@ -327,6 +328,46 @@ export default function Home({ language }: HomeProps) {
   const ChevronIconNext = dir === "rtl" ? ChevronLeft : ChevronRight;
   const ChevronIconPrev = dir === "rtl" ? ChevronRight : ChevronLeft;
 
+  // Sample YouTube videos
+  const youtubeVideos = [
+    {
+      id: "video1",
+      videoId: "9KHLTZaJcR8", // Placeholder video ID - replace with your actual video ID
+      title: language.code === "ar" ? "استراتيجيات التخطيط الناجح" : 
+             language.code === "fr" ? "Stratégies de Planification Réussie" : 
+             language.code === "es" ? "Estrategias de Planificación Exitosa" : 
+             "Successful Planning Strategies",
+      description: language.code === "ar" ? "تعلم كيفية التخطيط بفعالية لتحقيق أهدافك الشخصية والمهنية." : 
+                   language.code === "fr" ? "Apprenez à planifier efficacement pour atteindre vos objectifs personnels et professionnels." : 
+                   language.code === "es" ? "Aprenda a planificar eficazmente para alcanzar sus objetivos personales y profesionales." : 
+                   "Learn how to plan effectively to achieve your personal and professional goals."
+    },
+    {
+      id: "video2",
+      videoId: "dQw4w9WgXcQ", // Placeholder video ID - replace with your actual video ID
+      title: language.code === "ar" ? "تعلم كانفا للمبتدئين" : 
+             language.code === "fr" ? "Apprendre Canva pour les Débutants" : 
+             language.code === "es" ? "Aprende Canva para Principiantes" : 
+             "Learn Canva for Beginners",
+      description: language.code === "ar" ? "دليل شامل لاستخدام كانفا للتصميم الجرافيكي بسهولة." : 
+                   language.code === "fr" ? "Guide complet pour utiliser Canva pour la conception graphique facilement." : 
+                   language.code === "es" ? "Guía completa para usar Canva para diseño gráfico fácilmente." : 
+                   "A comprehensive guide to using Canva for graphic design easily."
+    },
+    {
+      id: "video3",
+      videoId: "60ItHLz5WEA", // Placeholder video ID - replace with your actual video ID
+      title: language.code === "ar" ? "أساسيات اللغة العربية" : 
+             language.code === "fr" ? "Fondamentaux de la Langue Arabe" : 
+             language.code === "es" ? "Fundamentos del Idioma Árabe" : 
+             "Arabic Language Fundamentals",
+      description: language.code === "ar" ? "تعلم أساسيات اللغة العربية مع هذا الشرح المبسط." : 
+                   language.code === "fr" ? "Apprenez les bases de la langue arabe avec cette explication simplifiée." : 
+                   language.code === "es" ? "Aprenda los fundamentos del idioma árabe con esta explicación simplificada." : 
+                   "Learn the basics of the Arabic language with this simplified explanation."
+    }
+  ];
+
   return (
     <div className={dir}>
       {/* Hero Section */}
@@ -469,6 +510,51 @@ export default function Home({ language }: HomeProps) {
               <CourseCard
                 key={course.id}
                 {...course}
+                language={language}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* YouTube Videos Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <SectionTitle 
+            title={language.code === "ar" ? "فيديوهات تعليمية" : 
+                   language.code === "fr" ? "Vidéos Éducatives" : 
+                   language.code === "es" ? "Videos Educativos" : 
+                   "Educational Videos"}
+            subtitle={language.code === "ar" ? "شاهد أحدث الفيديوهات التعليمية من قناة الإرادة" : 
+                      language.code === "fr" ? "Regardez les dernières vidéos éducatives de la chaîne Irada" : 
+                      language.code === "es" ? "Vea los últimos videos educativos del canal Irada" : 
+                      "Watch the latest educational videos from Irada channel"}
+            centered
+            language={language}
+          />
+          
+          <div className="flex items-center justify-center mb-8">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="flex items-center gap-2"
+              onClick={() => window.open("https://www.youtube.com/channel/YOUR_CHANNEL_ID", "_blank")}
+            >
+              <Youtube className="h-5 w-5 text-red-600" />
+              <span>
+                {language.code === "ar" ? "زيارة قناة اليوتيوب" : 
+                 language.code === "fr" ? "Visiter la chaîne YouTube" : 
+                 language.code === "es" ? "Visitar canal de YouTube" : 
+                 "Visit YouTube Channel"}
+              </span>
+            </Button>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {youtubeVideos.map((video) => (
+              <YouTubeVideo
+                key={video.id}
+                {...video}
                 language={language}
               />
             ))}
