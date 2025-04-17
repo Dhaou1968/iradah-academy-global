@@ -529,7 +529,7 @@ export default function Home({ language }: HomeProps) {
               variant="outline" 
               size="lg" 
               className="flex items-center gap-2"
-              onClick={() => window.open("https://www.youtube.com/channel/YOUR_CHANNEL_ID", "_blank")}
+              onClick={() => window.open("https://www.youtube.com/@Iradah-Training", "_blank")}
             >
               <Youtube className="h-5 w-5 text-red-600" />
               <span>

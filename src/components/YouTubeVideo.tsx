@@ -11,13 +11,13 @@ interface YouTubeVideoProps {
 export default function YouTubeVideo({ videoId, title, description, language }: YouTubeVideoProps) {
   return (
     <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-      <div className="aspect-w-16 aspect-h-9">
+      <div className="relative pb-[56.25%]">
         <iframe
           src={`https://www.youtube.com/embed/${videoId}`}
           title={title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          className="w-full h-full"
+          className="absolute top-0 left-0 w-full h-full"
         ></iframe>
       </div>
       <div className="p-4 bg-white">
