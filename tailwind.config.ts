@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,11 +62,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-        // الألوان المخصصة للمنصة
         irada: {
-          blue: "#023047",
+          blue: "#0050ca",
           gold: "#C19A6B",
-          yellow: "#ffb703",
+          yellow: "#f5b63b",
           gray: "#F5F7FA",
           red: "#A34E54"
         }
