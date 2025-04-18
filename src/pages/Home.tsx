@@ -328,39 +328,39 @@ export default function Home({ language }: HomeProps) {
   const youtubeVideos = [
     {
       id: "video1",
-      videoId: "fqSGdVhpJ-o",
-      title: language.code === "ar" ? "التخطيط الاستراتيجي الشخصي - دورة الإرادة" : 
-             language.code === "fr" ? "Planification Stratégique Personnelle - Cours Irada" : 
-             language.code === "es" ? "Planificación Estratégica Personal - Curso Irada" : 
-             "Personal Strategic Planning - Irada Course",
-      description: language.code === "ar" ? "شرح مفصل عن التخطيط الاستراتيجي الشخصي وكيفية تحقيق الأهداف." : 
-                   language.code === "fr" ? "Explication détaillée de la planification stratégique personnelle et comment atteindre vos objectifs." : 
-                   language.code === "es" ? "Explicación detallada de la planificación estratégica personal y cómo lograr sus objetivos." : 
-                   "Detailed explanation of personal strategic planning and how to achieve your goals."
+      videoId: "AO01H-d7k4g",
+      title: language.code === "ar" ? "مقدمات التخطيط الشخصي الاستراتيجي" : 
+             language.code === "fr" ? "Introduction à la Planification Stratégique Personnelle" : 
+             language.code === "es" ? "Introducción a la Planificación Estratégica Personal" : 
+             "Introduction to Personal Strategic Planning",
+      description: language.code === "ar" ? "هذه شهادات بعض ممن حضروا دورة مقدمات التخطيط الاستراتيجي الشخصي" : 
+                   language.code === "fr" ? "Témoignages des participants au cours d'introduction à la planification stratégique personnelle" : 
+                   language.code === "es" ? "Testimonios de participantes del curso de introducción a la planificación estratégica personal" : 
+                   "Testimonials from participants of the personal strategic planning introduction course"
     },
     {
       id: "video2",
       videoId: "C_CIkZCobJA",
-      title: language.code === "ar" ? "استخدام مايكروسوفت إكسل - دورة متقدمة" : 
-             language.code === "fr" ? "Utilisation de Microsoft Excel - Cours Avancé" : 
-             language.code === "es" ? "Uso de Microsoft Excel - Curso Avanzado" : 
-             "Using Microsoft Excel - Advanced Course",
-      description: language.code === "ar" ? "تعلم المهارات المتقدمة في استخدام برنامج مايكروسوفت إكسل." : 
-                   language.code === "fr" ? "Apprenez les compétences avancées dans l'utilisation de Microsoft Excel." : 
-                   language.code === "es" ? "Aprenda habilidades avanzadas en el uso de Microsoft Excel." : 
-                   "Learn advanced skills in using Microsoft Excel."
+      title: language.code === "ar" ? "شهادات المتدربين" : 
+             language.code === "fr" ? "Témoignages des Stagiaires" : 
+             language.code === "es" ? "Testimonios de los Participantes" : 
+             "Participant Testimonials",
+      description: language.code === "ar" ? "هذه شهادات بعض ممن حضروا دورة مقدمات التخطيط الاستراتيجي الشخصي" : 
+                   language.code === "fr" ? "Témoignages des participants au cours d'introduction à la planification stratégique personnelle" : 
+                   language.code === "es" ? "Testimonios de participantes del curso de introducción a la planificación estratégica personal" : 
+                   "Testimonials from participants of the personal strategic planning introduction course"
     },
     {
       id: "video3",
-      videoId: "9fDLAaLJbpU",
-      title: language.code === "ar" ? "رحلة استراتيجية: إعداد خطتك الاستراتيجية الشخصية" : 
-             language.code === "fr" ? "Voyage Stratégique: Préparation de votre Plan Stratégique Personnel" : 
-             language.code === "es" ? "Viaje Estratégico: Preparación de su Plan Estratégico Personal" : 
-             "Strategic Journey: Preparing Your Personal Strategic Plan",
-      description: language.code === "ar" ? "خطوات عملية لإعداد خطة استراتيجية شخصية ناجحة." : 
-                   language.code === "fr" ? "Étapes pratiques pour préparer un plan stratégique personnel réussi." : 
-                   language.code === "es" ? "Pasos prácticos para preparar un plan estratégico personal exitoso." : 
-                   "Practical steps for preparing a successful personal strategic plan."
+      videoId: "4a37R7Lz2Qk",
+      title: language.code === "ar" ? "الدورة المتكاملة: احترف العرض التفاعلي، النسخة الاولى2024" : 
+             language.code === "fr" ? "Tout lire" : 
+             language.code === "es" ? "Curso Completo: Domina la Presentación Interactiva, Primera Versión 2024" : 
+             "Complete Course: Master Interactive Presentation, First Version 2024",
+      description: language.code === "ar" ? "برامج تنقلك من التقليد الى الاحتراف" : 
+                   language.code === "fr" ? "Des programmes qui vous font passer de l'imitation à la maîtrise" : 
+                   language.code === "es" ? "Programas que te llevan de la imitación al dominio" : 
+                   "Programs that take you from imitation to mastery"
     }
   ];
 
