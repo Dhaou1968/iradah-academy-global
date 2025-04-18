@@ -19,6 +19,7 @@ export default function Navbar({ currentLanguage, onLanguageChange }: NavbarProp
 
   const navLinks = [
     { name: { ar: "الرئيسية", en: "Home", fr: "Accueil", es: "Inicio" }, path: "/" },
+    { name: { ar: "الدورات", en: "Courses", fr: "Cours", es: "Cursos" }, path: "/courses" },
     { name: { ar: "التخطيط الاستراتيجي", en: "Strategic Planning", fr: "Planification Stratégique", es: "Planificación Estratégica" }, path: "/strategic-planning" },
     { name: { ar: "البرامج التقنية", en: "Technical Programs", fr: "Programmes Techniques", es: "Programas Técnicos" }, path: "/technical-programs" },
     { name: { ar: "تعليم اللغة العربية", en: "Arabic Language", fr: "Langue Arabe", es: "Idioma Árabe" }, path: "/arabic-language" },

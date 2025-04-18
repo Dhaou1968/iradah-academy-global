@@ -14,6 +14,7 @@ import ArabicLanguage from "./pages/ArabicLanguage";
 import Library from "./pages/Library";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Courses from "./pages/Courses";
 import { Language, languages } from "./components/LanguageSwitcher";
 
 const queryClient = new QueryClient();
@@ -41,6 +42,7 @@ const App = () => {
             <main className="flex-grow">
               <Routes>
                 <Route path="/" element={<Home language={currentLanguage} />} />
+                <Route path="/courses" element={<Courses language={currentLanguage} />} />
                 <Route path="/strategic-planning" element={<StrategicPlanning language={currentLanguage} />} />
                 <Route path="/technical-programs" element={<TechnicalPrograms language={currentLanguage} />} />
                 <Route path="/arabic-language" element={<ArabicLanguage language={currentLanguage} />} />
