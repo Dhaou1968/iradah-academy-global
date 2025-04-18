@@ -340,15 +340,15 @@ export default function Home({ language }: HomeProps) {
     },
     {
       id: "video2",
-      videoId: "n2Q2Vwj20xw",
-      title: language.code === "ar" ? "مسارات تعليم اللغة الألمانية - خطوة بخطوة" : 
-             language.code === "fr" ? "Parcours d'Apprentissage de l'Allemand - Étape par Étape" : 
-             language.code === "es" ? "Caminos de Aprendizaje del Alemán - Paso a Paso" : 
-             "German Language Learning Paths - Step by Step",
-      description: language.code === "ar" ? "دليل شامل لتعلم اللغة الألمانية من البداية حتى الاحتراف." : 
-                   language.code === "fr" ? "Guide complet pour apprendre l'allemand du début à la maîtrise." : 
-                   language.code === "es" ? "Guía completa para aprender alemán desde el principio hasta el dominio." : 
-                   "A comprehensive guide to learning German from beginner to proficiency."
+      videoId: "C_CIkZCobJA",
+      title: language.code === "ar" ? "استخدام مايكروسوفت إكسل - دورة متقدمة" : 
+             language.code === "fr" ? "Utilisation de Microsoft Excel - Cours Avancé" : 
+             language.code === "es" ? "Uso de Microsoft Excel - Curso Avanzado" : 
+             "Using Microsoft Excel - Advanced Course",
+      description: language.code === "ar" ? "تعلم المهارات المتقدمة في استخدام برنامج مايكروسوفت إكسل." : 
+                   language.code === "fr" ? "Apprenez les compétences avancées dans l'utilisation de Microsoft Excel." : 
+                   language.code === "es" ? "Aprenda habilidades avanzadas en el uso de Microsoft Excel." : 
+                   "Learn advanced skills in using Microsoft Excel."
     },
     {
       id: "video3",
