@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { 
@@ -50,7 +49,11 @@ export default function Home({ language }: HomeProps) {
       technicalPrograms: "البرامج التقنية",
       arabicLanguage: "تعليم اللغة العربية",
       library: "المكتبة",
-      personalDevelopment: "التنمية البشرية"
+      personalDevelopment: "التنمية البشرية",
+      advisorTitle: "المستشار التقني",
+      advisorName: "ضو التريكي",
+      advisorRole: "تقني تكنولوجيا المعلومات بجامعة ليون",
+      advisorPosition: "رئيس مجلس إدارة مؤسسة سفراء السلام العالمية"
     },
     en: {
       heroCta: "Irada Educational Platform",
@@ -70,7 +73,11 @@ export default function Home({ language }: HomeProps) {
       technicalPrograms: "Technical Programs",
       arabicLanguage: "Arabic Language",
       library: "Library",
-      personalDevelopment: "Personal Development"
+      personalDevelopment: "Personal Development",
+      advisorTitle: "Technical Advisor",
+      advisorName: "Dhou Triki",
+      advisorRole: "IT Technician at University of Lyon",
+      advisorPosition: "Chairman of the Global Peace Ambassadors Foundation"
     },
     fr: {
       heroCta: "Plateforme Éducative Irada",
@@ -90,7 +97,11 @@ export default function Home({ language }: HomeProps) {
       technicalPrograms: "Programmes Techniques",
       arabicLanguage: "Langue Arabe",
       library: "Bibliothèque",
-      personalDevelopment: "Développement Personnel"
+      personalDevelopment: "Développement Personnel",
+      advisorTitle: "Conseiller Technique",
+      advisorName: "Dhou Triki",
+      advisorRole: "Technicien Informatique à l'Université de Lyon",
+      advisorPosition: "Président du Conseil d'Administration de la Fondation Mondiale des Ambassadeurs de la Paix"
     },
     es: {
       heroCta: "Plataforma Educativa Irada",
@@ -110,7 +121,11 @@ export default function Home({ language }: HomeProps) {
       technicalPrograms: "Programas Técnicos",
       arabicLanguage: "Idioma Árabe",
       library: "Biblioteca",
-      personalDevelopment: "Desarrollo Personal"
+      personalDevelopment: "Desarrollo Personal",
+      advisorTitle: "Asesor Técnico",
+      advisorName: "Dhou Triki",
+      advisorRole: "Técnico en TI en la Universidad de Lyon",
+      advisorPosition: "Presidente del Consejo de la Fundación Mundial de Embajadores de la Paz"
     }
   };
   
@@ -601,6 +616,34 @@ export default function Home({ language }: HomeProps) {
           >
             {text.ctaButton}
           </Button>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center text-center">
+            <div className="w-72 h-72 md:w-96 md:h-96 relative mb-8">
+              <img
+                src="/lovable-uploads/ffff64b6-7619-46ae-80b9-ff64a21d441e.png"
+                alt={text.advisorName}
+                className="w-full h-full object-cover rounded-lg shadow-xl"
+              />
+            </div>
+            <div className="max-w-2xl">
+              <h3 className="text-xl md:text-2xl font-bold text-irada-blue mb-2">
+                {text.advisorTitle}
+              </h3>
+              <h4 className="text-2xl md:text-3xl font-bold text-irada-gold mb-4">
+                {text.advisorName}
+              </h4>
+              <p className="text-lg text-gray-700 mb-2">
+                {text.advisorRole}
+              </p>
+              <p className="text-lg text-irada-blue">
+                {text.advisorPosition}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
