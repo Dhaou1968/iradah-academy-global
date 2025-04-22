@@ -1,4 +1,3 @@
-
 import { Language } from "@/components/LanguageSwitcher";
 import CourseCard from "@/components/CourseCard";
 import SectionTitle from "@/components/SectionTitle";
@@ -22,7 +21,7 @@ const coursesData = [
       fr: "Apprenez les bases de la planification stratégique personnelle et comment l'appliquer dans votre vie",
       es: "Aprenda los fundamentos de la planificación estratégica personal y cómo aplicarla en su vida"
     },
-    image: "/lovable-uploads/730a562f-0f12-473c-838d-9d68df42ed7b.png",
+    image: "/lovable-uploads/206c7d15-e0c9-4507-ae75-a0ecaae25845.png",
     category: {
       ar: "التخطيط الاستراتيجي",
       en: "Strategic Planning",
@@ -50,7 +49,7 @@ const coursesData = [
       fr: "Apprenez à créer et à donner des présentations professionnelles percutantes",
       es: "Aprenda a crear y dar presentaciones profesionales impactantes"
     },
-    image: "/lovable-uploads/52ad38bc-432e-4fd6-888f-eaee951e3d0f.png",
+    image: "/lovable-uploads/e3989070-a9ba-43fa-9367-c42010767859.png",
     category: {
       ar: "مهارات العرض",
       en: "Presentation Skills",
@@ -67,10 +66,10 @@ const coursesData = [
   {
     id: "3",
     title: {
-      ar: "دورة الكانفا",
-      en: "Canva Course",
-      fr: "Cours Canva",
-      es: "Curso de Canva"
+      ar: "دورة كانفا للتصميم المرئي",
+      en: "Canva Visual Design Course",
+      fr: "Cours de Design Visuel Canva",
+      es: "Curso de Diseño Visual de Canva"
     },
     description: {
       ar: "تعلم تصميم الجرافيك باستخدام منصة كانفا",
@@ -78,7 +77,7 @@ const coursesData = [
       fr: "Apprenez le design graphique avec la plateforme Canva",
       es: "Aprenda diseño gráfico usando la plataforma Canva"
     },
-    image: "/lovable-uploads/730a562f-0f12-473c-838d-9d68df42ed7b.png",
+    image: "/lovable-uploads/afc46fdb-d03f-4863-865f-8d2f5ddda53d.png",
     category: {
       ar: "التصميم",
       en: "Design",
@@ -106,7 +105,7 @@ const coursesData = [
       fr: "Apprenez à créer et gérer des sondages avec Google Forms",
       es: "Aprenda a crear y gestionar encuestas usando Google Forms"
     },
-    image: "/lovable-uploads/52ad38bc-432e-4fd6-888f-eaee951e3d0f.png",
+    image: "/lovable-uploads/be6fa05b-d7f3-4375-95b9-abfb823bdb89.png",
     category: {
       ar: "الأدوات الرقمية",
       en: "Digital Tools",
@@ -134,7 +133,7 @@ const coursesData = [
       fr: "Apprenez à utiliser la plateforme Padlet pour la collaboration",
       es: "Aprenda a usar la plataforma Padlet para colaboración"
     },
-    image: "/lovable-uploads/730a562f-0f12-473c-838d-9d68df42ed7b.png",
+    image: "/lovable-uploads/927d9921-9e24-42a2-809c-e83ac9e8bbc2.png",
     category: {
       ar: "التعليم الرقمي",
       en: "Digital Education",
@@ -162,7 +161,7 @@ const coursesData = [
       fr: "Découvrez les bases de l'IA et ses applications",
       es: "Aprenda los fundamentos de la IA y sus aplicaciones"
     },
-    image: "/lovable-uploads/52ad38bc-432e-4fd6-888f-eaee951e3d0f.png",
+    image: "/lovable-uploads/59c4d4ff-814d-4a6f-993e-c4ac2f2c5cdf.png",
     category: {
       ar: "التكنولوجيا",
       en: "Technology",
