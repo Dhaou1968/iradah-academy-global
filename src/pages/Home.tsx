@@ -590,4 +590,62 @@ export default function Home({ language }: HomeProps) {
               ))}
             </CarouselContent>
             <div className="flex justify-center mt-8">
-              <CarouselPrevious className="relative static transform-none mr-2 bg-white text
+              <CarouselPrevious className="relative static transform-none mr-2 bg-white text-irada-blue border-irada-blue">
+                <ChevronIconPrev className="h-5 w-5" />
+              </CarouselPrevious>
+              <CarouselNext className="relative static transform-none ml-2 bg-white text-irada-blue border-irada-blue">
+                <ChevronIconNext className="h-5 w-5" />
+              </CarouselNext>
+            </div>
+          </Carousel>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-to-br from-irada-blue to-irada-blue/90 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            {text.ctaTitle}
+          </h2>
+          <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-irada-yellow">
+            {text.ctaSubtitle}
+          </p>
+          <Button 
+            size="lg" 
+            className="btn-accent text-lg"
+            onClick={() => navigate("/register")}
+          >
+            {text.ctaButton}
+          </Button>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center text-center">
+            <div className="w-72 h-72 md:w-96 md:h-96 relative mb-8">
+              <img
+                src="/lovable-uploads/ffff64b6-7619-46ae-80b9-ff64a21d441e.png"
+                alt={text.advisorName}
+                className="w-full h-full object-cover rounded-lg shadow-xl"
+              />
+            </div>
+            <div className="max-w-2xl">
+              <h3 className="text-xl md:text-2xl font-bold text-irada-blue mb-2">
+                {text.advisorTitle}
+              </h3>
+              <h4 className="text-2xl md:text-3xl font-bold text-irada-gold mb-4">
+                {text.advisorName}
+              </h4>
+              <p className="text-lg text-gray-700 mb-2">
+                {text.advisorRole}
+              </p>
+              <p className="text-lg text-irada-blue">
+                {text.advisorPosition}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
