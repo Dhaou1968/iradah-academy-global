@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { 
   MapPin, 
@@ -364,7 +363,9 @@ export default function Contact({ language }: ContactProps) {
                     <h3 className="text-lg font-semibold text-irada-blue mb-4">{text.socialMedia}</h3>
                     <div className="flex space-x-4 rtl:space-x-reverse">
                       <a 
-                        href="#" 
+                        href="https://www.facebook.com/profile.php?id=61557147951710" 
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-irada-blue/10 p-3 rounded-full hover:bg-irada-blue hover:text-white transition-colors"
                       >
                         <Facebook className="h-5 w-5" />

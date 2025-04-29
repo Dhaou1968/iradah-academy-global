@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
 import { Language } from "./LanguageSwitcher";
@@ -70,7 +71,7 @@ export default function Footer({ currentLanguage }: FooterProps) {
             />
             <p className="text-gray-200 text-sm">{content.aboutText}</p>
             <div className="flex mt-4 space-x-4 rtl:space-x-reverse">
-              <a href="#" className="text-white hover:text-irada-yellow">
+              <a href="https://www.facebook.com/profile.php?id=61557147951710" target="_blank" rel="noopener noreferrer" className="text-white hover:text-irada-yellow">
                 <Facebook size={20} />
               </a>
               <a href="#" className="text-white hover:text-irada-yellow">
