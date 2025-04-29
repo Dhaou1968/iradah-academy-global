@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
 import { Language } from "./LanguageSwitcher";
@@ -16,7 +15,7 @@ export default function Footer({ currentLanguage }: FooterProps) {
       aboutText: "منصة الإرادة التعليمية هي منصة متكاملة للتعليم وتطوير المهارات، تقدم دورات متخصصة في مجالات متنوعة تشمل التخطيط الاستراتيجي، البرامج التقنية، تعليم اللغة العربية، وتطوير الذات.",
       menu: "القائمة الرئيسية",
       contact: "تواصل معنا",
-      address: "ليون، فرنسا",
+      address: "11 Rue bel air 69800 Saint Priest, Lyon, France",
       rights: "جميع الحقوق محفوظة © 2025 منصة الإرادة التعليمية"
     },
     en: {
@@ -24,7 +23,7 @@ export default function Footer({ currentLanguage }: FooterProps) {
       aboutText: "Irada Educational Platform is a comprehensive platform for education and skills development, offering specialized courses in various fields including strategic planning, technical programs, Arabic language teaching, and personal development.",
       menu: "Main Menu",
       contact: "Contact Us",
-      address: "Lyon, France",
+      address: "11 Rue bel air 69800 Saint Priest, Lyon, France",
       rights: "All Rights Reserved © 2025 Irada Educational Platform"
     },
     fr: {
@@ -32,7 +31,7 @@ export default function Footer({ currentLanguage }: FooterProps) {
       aboutText: "La Plateforme Éducative Irada est une plateforme complète pour l'éducation et le développement des compétences, offrant des cours spécialisés dans divers domaines, notamment la planification stratégique, les programmes techniques, l'enseignement de la langue arabe et le développement personnel.",
       menu: "Menu Principal",
       contact: "Contactez-nous",
-      address: "Lyon, France",
+      address: "11 Rue bel air 69800 Saint Priest, Lyon, France",
       rights: "Tous Droits Réservés © 2025 Plateforme Éducative Irada"
     },
     es: {
@@ -40,7 +39,7 @@ export default function Footer({ currentLanguage }: FooterProps) {
       aboutText: "La Plataforma Educativa Irada es una plataforma integral para la educación y el desarrollo de habilidades, que ofrece cursos especializados en diversos campos, incluida la planificación estratégica, programas técnicos, enseñanza del idioma árabe y desarrollo personal.",
       menu: "Menú Principal",
       contact: "Contáctenos",
-      address: "Lyon, Francia",
+      address: "11 Rue bel air 69800 Saint Priest, Lyon, France",
       rights: "Todos los Derechos Reservados © 2025 Plataforma Educativa Irada"
     }
   };

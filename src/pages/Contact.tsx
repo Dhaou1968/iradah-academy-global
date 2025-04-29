@@ -152,7 +152,7 @@ export default function Contact({ language }: ContactProps) {
                 language.code === "fr" ? "Quels sont les modes de paiement disponibles ?" : 
                 language.code === "es" ? "¿Qué métodos de pago están disponibles?" : 
                 "What payment methods are available?",
-      answer: language.code === "ar" ? "نحن نقبل مجموعة متنوعة من طرق الدفع بما في ذلك بطاقات الائتمان (فيزا، ماستركارد)، والتحويل المصرفي، ومدى، وآبل باي." : 
+      answer: language.code === "ar" ? "نحن نقبل مجموعة متنوعة من طرق الدفع بما في ذلك بطاقات الائتمان (فيزا، ��استركارد)، والتحويل المصرفي، ومدى، وآبل باي." : 
               language.code === "fr" ? "Nous acceptons une variété de méthodes de paiement, y compris les cartes de crédit (Visa, Mastercard), les virements bancaires, Mada, et Apple Pay." : 
               language.code === "es" ? "Aceptamos una variedad de métodos de pago, incluidas tarjetas de crédito (Visa, Mastercard), transferencias bancarias, Mada y Apple Pay." : 
               "We accept a variety of payment methods including credit cards (Visa, Mastercard), bank transfer, Mada, and Apple Pay."
@@ -335,7 +335,7 @@ export default function Contact({ language }: ContactProps) {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-irada-blue">{text.address}</h3>
-                      <p className="text-gray-600">{text.addressValue}</p>
+                      <p className="text-gray-600">{language.code === "fr" ? "11 Rue bel air 69800 Saint Priest, Lyon, France" : "11 Rue bel air 69800 Saint Priest, Lyon, France"}</p>
                     </div>
                   </div>
                   
@@ -423,7 +423,7 @@ export default function Contact({ language }: ContactProps) {
 
       <section className="h-96 w-full bg-gray-200">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232192.67989833672!2d46.717300378912905!3d24.726179926025758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1713361863687!5m2!1sen!2sus" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.016487585901!2d4.915798376329241!3d45.70185137108963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c1ffbf8dc395%3A0x3a38f14d9b153590!2s11%20Rue%20Bel%20Air%2C%2069800%20Saint-Priest%2C%20France!5e0!3m2!1sen!2sus!4v1618929826621!5m2!1sen!2sus" 
           width="100%" 
           height="100%" 
           style={{ border: 0 }} 
