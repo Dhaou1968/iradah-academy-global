@@ -10,18 +10,18 @@ const coursesData = [
   {
     id: "1",
     title: {
-      ar: "مقدمات التخطيط الشخصي الاستراتيجي",
+      ar: "التخطيط الاستراتيجي الشخصي",
       en: "Introduction to Personal Strategic Planning",
-      fr: "Introduction à la planification stratégique personnelle",
-      es: "Introducción a la planificación estratégica personal"
+      fr: "Introduction à la Planification Stratégique Personnelle",
+      es: "Introducción a la Planificación Estratégica Personal"
     },
     description: {
-      ar: "تعلم أساسيات التخطيط الاستراتيجي الشخصي وكيفية تطبيقه في حياتك",
-      en: "Learn the basics of personal strategic planning and how to apply it in your life",
-      fr: "Apprenez les bases de la planification stratégique personnelle et comment l'appliquer dans votre vie",
-      es: "Aprenda los fundamentos de la planificación estratégica personal y cómo aplicarla en su vida"
+      ar: "تعلم أساسيات التخطيط الاستراتيجي الشخصي وكيفية تطبيقه في حياتك.",
+      en: "Learn the basics of personal strategic planning and how to apply it in your life.",
+      fr: "Apprenez les bases de la planification stratégique personnelle et comment l'appliquer dans votre vie.",
+      es: "Aprenda los fundamentos de la planificación estratégica personal y cómo aplicarla en su vida."
     },
-    image: "/lovable-uploads/c4a84730-5fe6-422a-aeac-d1a7e9b0c321.png", // Updated image for Strategic Planning course
+    image: "/lovable-uploads/Takhtit.png", // Updated image for Strategic Planning course
     category: {
       ar: "التخطيط الاستراتيجي",
       en: "Strategic Planning",

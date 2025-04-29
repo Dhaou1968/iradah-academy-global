@@ -128,7 +128,7 @@ export default function TechnicalPrograms({ language }: TechnicalProgramsProps) 
                    "Interactive platform for classrooms and presentations.",
       icon: Cpu,
       category: "interactive",
-      logo: "/lovable-uploads/52ad38bc-432e-4fd6-888f-eaee951e3d0f.png"
+      logo: "/lovable-uploads/Wooclap-logo.png"
     },
     {
       name: "AI Tools",
