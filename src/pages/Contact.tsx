@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { 
   MapPin, 
@@ -193,7 +194,14 @@ export default function Contact({ language }: ContactProps) {
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    
+    // Add the recipient email address to the form data for submission
+    const dataToSubmit = {
+      ...formData,
+      recipientEmail: "dhaou.triki@gmail.com"
+    };
+    
+    console.log("Form submitted:", dataToSubmit);
     
     toast({
       title: language.code === "ar" ? "تم إرسال الرسالة" : 
