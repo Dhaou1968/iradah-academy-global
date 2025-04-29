@@ -1,4 +1,3 @@
-
 import { Language } from "@/components/LanguageSwitcher";
 import CourseCard from "@/components/CourseCard";
 import SectionTitle from "@/components/SectionTitle";
@@ -22,7 +21,7 @@ const coursesData = [
       fr: "Apprenez les bases de la planification stratégique personnelle et comment l'appliquer dans votre vie",
       es: "Aprenda los fundamentos de la planificación estratégica personal y cómo aplicarla en su vida"
     },
-    image: "/lovable-uploads/59c4d4ff-814d-4a6f-993e-c4ac2f2c5cdf.png", // AI course image
+    image: "/lovable-uploads/c4a84730-5fe6-422a-aeac-d1a7e9b0c321.png", // Updated image for Strategic Planning course
     category: {
       ar: "التخطيط الاستراتيجي",
       en: "Strategic Planning",
@@ -50,7 +49,7 @@ const coursesData = [
       fr: "Apprenez à créer et à donner des présentations professionnelles percutantes",
       es: "Aprenda a crear y dar presentaciones profesionales impactantes"
     },
-    image: "/lovable-uploads/c318c0e9-9965-4cfb-8cf3-68c53868f495.png", // New image for interactive presentation
+    image: "/lovable-uploads/c318c0e9-9965-4cfb-8cf3-68c53868f495.png", // Keep the current image
     category: {
       ar: "مهارات العرض",
       en: "Presentation Skills",
@@ -78,7 +77,7 @@ const coursesData = [
       fr: "Apprenez le design graphique avec la plateforme Canva",
       es: "Aprenda diseño gráfico usando la plataforma Canva"
     },
-    image: "/lovable-uploads/e3989070-a9ba-43fa-9367-c42010767859.png",
+    image: "/lovable-uploads/b3e71e40-b4a3-4928-8354-3a427528b1da.png", // Updated image for Canva course
     category: {
       ar: "التصميم",
       en: "Design",
@@ -106,7 +105,7 @@ const coursesData = [
       fr: "Apprenez à créer et gérer des sondages avec Google Forms",
       es: "Aprenda a crear y gestionar encuestas usando Google Forms"
     },
-    image: "/lovable-uploads/be6fa05b-d7f3-4375-95b9-abfb823bdb89.png",
+    image: "/lovable-uploads/8486bff2-611e-4cdd-ad1b-363d85bc0062.png", // Updated image for Google Forms course
     category: {
       ar: "الأدوات الرقمية",
       en: "Digital Tools",
@@ -134,7 +133,7 @@ const coursesData = [
       fr: "Apprenez à utiliser la plateforme Padlet pour la collaboration",
       es: "Aprenda a usar la plataforma Padlet para colaboración"
     },
-    image: "/lovable-uploads/c318c0e9-9965-4cfb-8cf3-68c53868f495.png", // New image
+    image: "/lovable-uploads/d4efa499-6451-4452-b9a1-b41388e14411.png", // Updated image for Padlet course
     category: {
       ar: "التعليم الرقمي",
       en: "Digital Education",
@@ -162,7 +161,7 @@ const coursesData = [
       fr: "Découvrez les bases de l'IA et ses applications",
       es: "Aprenda los fundamentos de la IA y sus aplicaciones"
     },
-    image: "/lovable-uploads/e3989070-a9ba-43fa-9367-c42010767859.png", // Canva course image
+    image: "/lovable-uploads/e3989070-a9ba-43fa-9367-c42010767859.png", // Keep this image
     category: {
       ar: "التكنولوجيا",
       en: "Technology",
