@@ -152,7 +152,7 @@ export default function Contact({ language }: ContactProps) {
                 language.code === "fr" ? "Quels sont les modes de paiement disponibles ?" : 
                 language.code === "es" ? "¿Qué métodos de pago están disponibles?" : 
                 "What payment methods are available?",
-      answer: language.code === "ar" ? "نحن نقبل مجموعة متنوعة من طرق الدفع بما في ذلك بطاقات الائتمان (فيزا، ��استركارد)، والتحويل المصرفي، ومدى، وآبل باي." : 
+      answer: language.code === "ar" ? "نحن نقبل مجموعة متنوعة من طرق الدفع بما في ذلك بطاقات الائتمان (فيزا، ماستركارد)، والتحويل المصرفي، ومدى، وآبل باي." : 
               language.code === "fr" ? "Nous acceptons une variété de méthodes de paiement, y compris les cartes de crédit (Visa, Mastercard), les virements bancaires, Mada, et Apple Pay." : 
               language.code === "es" ? "Aceptamos una variedad de métodos de pago, incluidas tarjetas de crédito (Visa, Mastercard), transferencias bancarias, Mada y Apple Pay." : 
               "We accept a variety of payment methods including credit cards (Visa, Mastercard), bank transfer, Mada, and Apple Pay."
