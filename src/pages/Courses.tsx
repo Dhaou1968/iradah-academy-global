@@ -21,7 +21,7 @@ const coursesData = [
       fr: "Apprenez les bases de la planification stratégique personnelle et comment l'appliquer dans votre vie.",
       es: "Aprenda los fundamentos de la planificación estratégica personal y cómo aplicarla en su vida."
     },
-    image: "/lovable-uploads/Takhtit.png", // Updated image for Strategic Planning course
+    image: "/lovable-uploads/Takhtit.png",
     category: {
       ar: "التخطيط الاستراتيجي",
       en: "Strategic Planning",
@@ -31,8 +31,8 @@ const coursesData = [
     duration: "12h",
     students: 150,
     startDate: "2024-05-01",
-    price: 299,
-    currency: "USD",
+    price: 60,
+    currency: "EUR",
     link: "/strategic-planning"
   },
   {
@@ -49,7 +49,7 @@ const coursesData = [
       fr: "Apprenez à créer et à donner des présentations professionnelles percutantes",
       es: "Aprenda a crear y dar presentaciones profesionales impactantes"
     },
-    image: "/lovable-uploads/c318c0e9-9965-4cfb-8cf3-68c53868f495.png", // Keep the current image
+    image: "/lovable-uploads/c318c0e9-9965-4cfb-8cf3-68c53868f495.png",
     category: {
       ar: "مهارات العرض",
       en: "Presentation Skills",
@@ -59,8 +59,8 @@ const coursesData = [
     duration: "8h",
     students: 120,
     startDate: "2024-05-15",
-    price: 199,
-    currency: "USD",
+    price: 60,
+    currency: "EUR",
     link: "/technical-programs"
   },
   {
@@ -77,7 +77,7 @@ const coursesData = [
       fr: "Apprenez le design graphique avec la plateforme Canva",
       es: "Aprenda diseño gráfico usando la plataforma Canva"
     },
-    image: "/lovable-uploads/b3e71e40-b4a3-4928-8354-3a427528b1da.png", // Updated image for Canva course
+    image: "/lovable-uploads/b3e71e40-b4a3-4928-8354-3a427528b1da.png",
     category: {
       ar: "التصميم",
       en: "Design",
@@ -87,8 +87,8 @@ const coursesData = [
     duration: "6h",
     students: 90,
     startDate: "2024-06-01",
-    price: 149,
-    currency: "USD",
+    price: 60,
+    currency: "EUR",
     link: "/canva"
   },
   {
@@ -105,7 +105,7 @@ const coursesData = [
       fr: "Apprenez à créer et gérer des sondages avec Google Forms",
       es: "Aprenda a crear y gestionar encuestas usando Google Forms"
     },
-    image: "/lovable-uploads/8486bff2-611e-4cdd-ad1b-363d85bc0062.png", // Updated image for Google Forms course
+    image: "/lovable-uploads/8486bff2-611e-4cdd-ad1b-363d85bc0062.png",
     category: {
       ar: "الأدوات الرقمية",
       en: "Digital Tools",
@@ -115,8 +115,8 @@ const coursesData = [
     duration: "4h",
     students: 75,
     startDate: "2024-06-15",
-    price: 99,
-    currency: "USD",
+    price: 60,
+    currency: "EUR",
     link: "/google-forms"
   },
   {
@@ -133,7 +133,7 @@ const coursesData = [
       fr: "Apprenez à utiliser la plateforme Padlet pour la collaboration",
       es: "Aprenda a usar la plataforma Padlet para colaboración"
     },
-    image: "/lovable-uploads/d4efa499-6451-4452-b9a1-b41388e14411.png", // Updated image for Padlet course
+    image: "/lovable-uploads/d4efa499-6451-4452-b9a1-b41388e14411.png",
     category: {
       ar: "التعليم الرقمي",
       en: "Digital Education",
@@ -143,8 +143,8 @@ const coursesData = [
     duration: "3h",
     students: 60,
     startDate: "2024-07-01",
-    price: 79,
-    currency: "USD",
+    price: 60,
+    currency: "EUR",
     link: "/padlet"
   },
   {
@@ -161,7 +161,7 @@ const coursesData = [
       fr: "Découvrez les bases de l'IA et ses applications",
       es: "Aprenda los fundamentos de la IA y sus aplicaciones"
     },
-    image: "/lovable-uploads/e3989070-a9ba-43fa-9367-c42010767859.png", // Keep this image
+    image: "/lovable-uploads/e3989070-a9ba-43fa-9367-c42010767859.png",
     category: {
       ar: "التكنولوجيا",
       en: "Technology",
@@ -171,8 +171,8 @@ const coursesData = [
     duration: "10h",
     students: 100,
     startDate: "2024-07-15",
-    price: 199,
-    currency: "USD",
+    price: 60,
+    currency: "EUR",
     link: "/ai-intro"
   },
   {
@@ -199,8 +199,8 @@ const coursesData = [
     duration: "8h",
     students: 85,
     startDate: "2024-08-01",
-    price: 149,
-    currency: "USD",
+    price: 60,
+    currency: "EUR",
     link: "/word"
   },
   {
@@ -227,8 +227,8 @@ const coursesData = [
     duration: "12h",
     students: 95,
     startDate: "2024-08-15",
-    price: 179,
-    currency: "USD",
+    price: 60,
+    currency: "EUR",
     link: "/excel"
   },
   {
@@ -255,8 +255,8 @@ const coursesData = [
     duration: "15h",
     students: 110,
     startDate: "2024-09-01",
-    price: 249,
-    currency: "USD",
+    price: 60,
+    currency: "EUR",
     link: "/communication"
   },
   {
@@ -283,8 +283,8 @@ const coursesData = [
     duration: "16h",
     students: 80,
     startDate: "2024-09-15",
-    price: 299,
-    currency: "USD",
+    price: 60,
+    currency: "EUR",
     link: "/family-problems"
   }
 ];
