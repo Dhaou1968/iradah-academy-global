@@ -349,7 +349,7 @@ export default function Home({ language }: HomeProps) {
     },
     {
       id: "video2",
-      videoId: "C_CIkZCobJA",
+      videoId: "SQf9j1F_ZiQ",
       title: language.code === "ar" ? "شهادات المتدربين" : 
              language.code === "fr" ? "Témoignages des Stagiaires" : 
              language.code === "es" ? "Testimonios de los Participantes" : 
