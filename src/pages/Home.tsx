@@ -147,20 +147,17 @@ export default function Home({ language }: HomeProps) {
                language.code === "fr" ? "Planification Stratégique" : 
                language.code === "es" ? "Planificación Estratégica" : 
                "Strategic Planning",
-      duration: language.code === "ar" ? "8 أسابيع" : 
-                language.code === "fr" ? "8 semaines" : 
-                language.code === "es" ? "8 semanas" : 
-                "8 weeks",
+      duration: language.code === "ar" ? "يومان" : 
+                language.code === "fr" ? "2 jours" : 
+                language.code === "es" ? "2 días" : 
+                "2 days",
       students: 230,
       startDate: language.code === "ar" ? "15 مايو 2025" : 
                  language.code === "fr" ? "15 mai 2025" : 
                  language.code === "es" ? "15 mayo 2025" : 
                  "May 15, 2025",
-      price: 399,
-      currency: language.code === "ar" ? "ر.س" : 
-                language.code === "fr" ? "SAR" : 
-                language.code === "es" ? "SAR" : 
-                "SAR",
+      price: 45,
+      currency: "EUR",
       link: "/strategic-planning/course1"
     },
     {
@@ -178,20 +175,17 @@ export default function Home({ language }: HomeProps) {
                language.code === "fr" ? "Programmes Techniques" : 
                language.code === "es" ? "Programas Técnicos" : 
                "Technical Programs",
-      duration: language.code === "ar" ? "4 أسابيع" : 
-                language.code === "fr" ? "4 semaines" : 
-                language.code === "es" ? "4 semanas" : 
-                "4 weeks",
+      duration: language.code === "ar" ? "ثلاثة أيام" : 
+                language.code === "fr" ? "3 jours" : 
+                language.code === "es" ? "3 días" : 
+                "3 days",
       students: 520,
       startDate: language.code === "ar" ? "1 يونيو 2025" : 
                  language.code === "fr" ? "1 juin 2025" : 
                  language.code === "es" ? "1 junio 2025" : 
                  "June 1, 2025",
-      price: 249,
-      currency: language.code === "ar" ? "ر.س" : 
-                language.code === "fr" ? "SAR" : 
-                language.code === "es" ? "SAR" : 
-                "SAR",
+      price: 45,
+      currency: "EUR",
       link: "/technical-programs/course2"
     },
     {
